@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Captiva.Framework.Pages.AutomationPage
+namespace Captiva.Framework.Pages.AutomationPractice
 {
     public class IndexPage : Page
     {
@@ -13,7 +13,7 @@ namespace Captiva.Framework.Pages.AutomationPage
         {
         }
 
-        private Button SignIn => new Button(Locator.ClassName, "loging", "Sign In");
+        private Button SignIn => new Button(Locator.ClassName, "login", "Sign In");
 
         public FromIndexPageTo ClickSingIn() 
         {

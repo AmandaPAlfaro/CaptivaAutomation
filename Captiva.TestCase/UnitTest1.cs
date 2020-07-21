@@ -1,4 +1,4 @@
-using Captiva.Framework.Pages.AutomationPage;
+using Captiva.Framework.Pages.AutomationPractice;
 using Captiva.TestCase.Base;
 using NUnit.Framework;
 using System.Threading;

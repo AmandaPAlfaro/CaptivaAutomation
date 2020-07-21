@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Captiva.Framework.Pages.AutomationPage
+namespace Captiva.Framework.Pages.AutomationPractice
 {
     public class AuthenticationPage : Page
     {

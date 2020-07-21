@@ -77,7 +77,7 @@ namespace Captiva.Framework.Browser
                     break;
 
                 default:
-                    driver = new ChromeDriver(Path.Combine(path,"Driver"));
+                    driver = new ChromeDriver(Path.Combine(path,"Drivers"));
                     break;
             }
             return driver;
