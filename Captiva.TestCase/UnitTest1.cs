@@ -8,17 +8,31 @@ namespace Captiva.TestCase
     public class Tests : BaseTest
     {
 
+        //[Test]
+        //public void Test1()
+        //{
+        //    var page = new IndexPage();
+
+        //    var title = page.ClickSingIn()
+        //        .AuthenticationPage
+        //        .Title;
+
+        //    Thread.Sleep(30000);
+        //    Assert.Pass();
+        //}
+
         [Test]
         public void Test1()
         {
-            var page = new IndexPage();
+            var indexpage = new IndexPage();
 
-            var title = page.ClickSingIn()
-                .AuthenticationPage
-                .Title;
+            var authenticationPage = indexpage.ClickSingIn().AuthenticationPage;
 
-            Thread.Sleep(30000);
-            Assert.Pass();
+            authenticationPage.TypeEmailAddress("asdfasdf");
+            authenticationPage.ClickOnCreateAnAccount();
+            var message = authenticationPage.GetErrorMessage();
+       
+            Assert.AreEqual("Invalid email address.",message);
         }
     }
 }

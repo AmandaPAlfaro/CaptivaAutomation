@@ -33,11 +33,5 @@ namespace Captiva.Framework.Core
             }
             return wait.Until(d => d.FindElement(element.By));
         }
-        
-
-
     }
-
-
-    
 }

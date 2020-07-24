@@ -39,6 +39,22 @@ namespace Captiva.TestCase.Base
         public void CloseReporter() 
         {
         }
-  
+
+        [Test]
+        public void test()
+        {
+            var message1 = "Invalid email address";
+            var message2 = "An acount using this emailaddress";
+
+            string message1Out;
+            string message2Out;
+            string title;
+
+           
+
+        }
+
+
+
     }
 }
